@@ -1,0 +1,4 @@
+<!--pages/boring/boring.wxml-->
+<view class="t1">你也是无聊才进来的吗</view>
+<view class="img"><image mode="widthFix" src="/images/boring.jpg"></image></view>
+<view class="t2">好巧呀(#^.^#)我也是</view>

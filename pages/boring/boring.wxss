@@ -1,0 +1,31 @@
+/* pages/boring/boring.wxss */
+.img {
+  width: 100%;
+}
+
+.img image {
+  width: 100%;
+}
+
+.t1,
+.t2 {
+  width: 100%;
+  text-align: center;
+  line-height: 120rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.t1 {
+  background: linear-gradient(to right, #1ae8c8, #4a8aff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.t2 {
+  background: linear-gradient(to right, #dae81a, #ff6e4a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

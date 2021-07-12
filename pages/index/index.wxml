@@ -1,0 +1,33 @@
+<!-- 绑定点击事件 -->
+<view class="tips">
+  <view class="t1">已为您在附近找到{{list.length}}处厕所，一起来拉屎吧</view>
+  <view class="t2">距离为直线距离，实际上可能有点远哦o(╥﹏╥)o</view>
+</view>
+<!--地图容器-->
+<map class="map" longitude="{{lng}}" latitude="{{lat}}" show-location>
+  <view class="btn" bindtap="getmy">
+    <image src="/images/address.png"></image>
+  </view>
+</map>
+<scroll-view scroll-y="true" class="scroll">
+  <view wx:if="{{list.length>0}}">
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="item" data-loc="{{item.location}}" bindtap="goAddress">
+        <view class="itemC">
+          <view class="left">
+            <view class="d">{{item.title}}</view>
+            <view class="dd">{{item.address}}</view>
+          </view>
+          <view class="right">
+            <view class="dis">{{item.dis}}</view>
+            <view class="icon">
+              <mp-icon icon="arrow" color="#1989fa" size="{{20}}"></mp-icon>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <view class="none">没有了，懒得找了，啦啦啦啦啦</view>
+  </view>
+  <view class="wu" wx:else>附近没有找到呀，怎么办呢，┭┮﹏┭┮，只能找个每人的小地方了呀๑乛◡乛๑</view>
+</scroll-view>
