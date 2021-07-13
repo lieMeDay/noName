@@ -48,7 +48,7 @@ Page({
       location: td.lat + ',' + td.lng,
       success: function (res) {
         let rr = res.data
-        console.log(rr)
+        // console.log(rr)
         rr.forEach(v => {
           let dis = util.getDistance(td.lat, td.lng, v.location.lat, v.location.lng)
           if (dis < 1) {

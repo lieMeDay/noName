@@ -1,0 +1,17 @@
+<!-- 我的 -->
+<view class="wrap">
+  <view class="header">
+    <view class="headerIcon"><image src="/images/head.jpg"></image></view>
+    <view class="headerName">一个不愿透露信息的陌生人</view>
+  </view>
+  <view class="subtitle">{{text}}</view>
+  <view class="list">
+  <view class="item" wx:for="{{list}}" wx:key="index" data-p="{{item.path}}" bindtap="goPage">
+  <view class="icon"><image src="{{item.icon}}"></image></view>
+  <view class="tit">{{item.tit}}</view>
+  <view class="desc">{{item.desc}}</view>
+  </view>
+  <view class="block"></view>
+  </view>
+</view>
+<view class="bottom">欲买桂花同载酒 终不似 少年游</view>

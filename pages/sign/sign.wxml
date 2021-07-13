@@ -1,0 +1,14 @@
+<view class='contents'>
+  <canvas class='firstCanvas' canvas-id="firstCanvas" bindtouchmove="move" bindtouchstart="start($event)" bindtouchend="end" bindtouchcancel="cancel" bindlongtap="tap" binderror="error" disable-scroll="true">
+    <!-- @touchmove='move' @touchstart='start($event)'
+			@touchend='end' @touchcancel='cancel' @longtap='tap' disable-scroll='true' @error='error' -->
+  </canvas>
+  <view class="btnBox">
+    <view class="reset" bindtap='clearClick'>
+      重签
+    </view>
+    <view class="over" bindtap="overSign">
+      完成签名
+    </view>
+  </view>
+</view>

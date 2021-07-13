@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "电子签名",
+          "pathName": "pages/sign/sign",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

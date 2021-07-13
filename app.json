@@ -1,39 +1,16 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/home/home",
+    "pages/findWC/findWC",
     "pages/boring/boring",
-    "pages/pic/pic"
+    "pages/pic/pic",
+    "pages/sign/sign"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#1989fa",
     "navigationBarTextStyle":"white",
     "navigationBarTitleText": "好无聊"
-  },
-  "tabBar": {
-    "color": "#a9b7b7",
-    "selectedColor": "#1989fa",
-    "borderStyle": "black",
-    "list": [
-      {
-        "selectedIconPath": "images/i11.png",
-        "iconPath": "images/i1.png",
-        "pagePath": "pages/index/index",
-        "text": "拉吗"
-      },
-      {
-        "selectedIconPath": "images/i22.png",
-        "iconPath": "images/i2.png",
-        "pagePath": "pages/boring/boring",
-        "text": "点呀"
-      },
-      {
-        "selectedIconPath": "images/i33.png",
-        "iconPath": "images/i3.png",
-        "pagePath": "pages/pic/pic",
-        "text": "识吗"
-      }
-    ]
   },
   "usingComponents": {
     "mp-icon": "weui-miniprogram/icon/icon"
